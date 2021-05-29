@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+}
+header {
+  margin-bottom: 20px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #c1c1c1;
+}
+
+#display,
+form {
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  max-width: 800px;
+  grid-template-columns: 2fr 1fr;
+}
+
+#display {
+  max-width: 900px;
+  margin-top: 25px;
+}
+input {
+  padding: 12px 20px;
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  font-family: serif;
+}
+
+input:focus {
+  border-color: grey;
+  border-radius: inherit;
+  outline: none;
+}
+
+#description {
+  grid-column: span 2;
+  padding: 12px 0 50px 20px;
+}
+#quantity {
+  margin-left: 20px;
+}
+
+i {
+  color: black;
+}
+.done-button,
+#submit-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3ded97;
+}
+
+#submit-button {
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.input-list {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px;
+  color: #7e7e7e;
+}
+.item-list {
+  font-size: 20px;
+}
+.item-description {
+  font-size: 15px;
+  font-weight: lighter;
+}
