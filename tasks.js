@@ -63,6 +63,7 @@ function addItemsToArray() {
     description: descriptionInput.value,
   };
   items.push(newItem);
+  console.log(items)
   addNewNodeToList(newItem);
 }
 
@@ -98,6 +99,7 @@ function addNewNodeToList(object) {
 
 // Loads data from the array and displays it on the array
 function loadNodeFromArray() {
+  console.log(items)
   items.forEach((item) => {
     addNewNodeToList(item);
   });
@@ -109,6 +111,7 @@ function removeItemFromNodeAndArray(target) {
   const itemToRemove = target.parentNode;
   itemToRemove.remove();
   items = items.filter((obj) => obj.name !== itemName);
+  console.log(items)
 }
 
 // This function adds the remove event
